@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>База</title>
+</head>
+<body>
+<h2>База</h2>
+<table>
+    {% for item in forms %}
+    <tr>
+        <td><b>Имя:</b>{{ item.patient_name }}</td>
+        <td><b>Возраст:</b>{{ item.patient_age}}</td>
+        <td><b>Пол:</b> {{ item.patient_gender }}</td>
+        <td><b>Микрокальцинаты:</b> {{ item.microcalcinates }}</td>
+        <td><b>Комментарий:</b> {{ item.comment_1 }}</td>
+        <td><b>Солидность:</b> {{ item.solidity }}</td>
+        <td><b>Эхогенность:</b> {{ item.echogenicity }}</td>
+        <td><b>Комментарий:</b> {{ item.comment_2 }}</td>
+        <td><b>Контуры:</b> {{ item.contours }}</td>
+        <td><b>Комментарий:</b> {{ item.comment_3 }}</td>
+        <td><b>Кровоток 1:</b> {{ item.bloodflow_1 }}</td>
+        <td><b>Кровоток 2:</b> {{ item.bloodflow_2 }}</td>
+        <td><b>Вертикализация:</b> {{ item.verticalization }}</td>
+        <td><b>Гистология:</b> {{ item.histology }}</td>
+        <td><b>Дата:</b> {{ item.form_date }}</td>
+    </tr>
+    <tr>
+    <td colspan="2" class="divider"><hr/></td>
+</tr>
+    {% endfor %}
+</table>
+</body>
+</html>

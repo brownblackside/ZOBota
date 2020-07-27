@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>ZOBota</title>
+
+<style>
+	#sidebar{position:absolute;}
+	#sidebar{
+top: 100px;
+left: 120px;
+}
+
+   .layer1 {
+    background: #6a1b9a; /* Цвет фона */
+    color: #DDA0DD; /* Цвет текста */
+    text-shadow: 2px 2px 1px black;
+    padding: 11px; /* Поля вокруг текста */
+    margin-bottom: -7px; /* Отступ снизу */
+	font-family: Montserrat;
+	font-weight: 500;
+   }
+   </style>
+ </head>
+
+
+<style>
+   .blok-center {position: centering;
+    width: 450px; /* Ширина блока */
+    height: 550px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    top: 100px; /* Положение блока от верхнего края */
+    bottom: 10px; /* Положение блока от нижнего края */
+    left:50px; /* Положение блока от левого края */
+    right:700px; /* Положение блока от правого края */
+    background: #DDA0DD; /* Цвет фона блока */
+    padding: 30px; /* Отступ внутри блока */
+    overflow: auto; /* Полоса прокрутки */
+   }
+   p{
+   font-family: Montserrat;
+   }
+   li{
+   font-family: Montserrat;
+   }
+</style>
+
+</head>
+
+
+<body bgcolor=#faf6fc>
+<div class="layer1">
+<font size="7" >ZOBota</font>
+</div> 
+
+<div id="sidebar">
+<p><button style="background:#6a1b9a ;color: #d8bfd8; width: 200px; height: 45px; border: 0; font-size: 20px; font-family: Montserrat;">Личный кабинет</button>
+<p><button style="background:#6a1b9a ;color: #d8bfd8; width: 200px; height: 45px; border: 0; font-size: 20px; font-family: Montserrat;">Перейти к базе</button>
+<p><button style="background:#6a1b9a ;color: #d8bfd8; width: 200px; height: 45px; border: 0; font-size: 20px; font-family: Montserrat;">Выйти</button>
+</div>
+
+<br>
+<div class="blok-center">
+<form action="saveprofile" method="post">
+<br>
+
+ <font color="#6a1b9a" >
+  <h4 align="center">
+<p><p style="color:#6a1b9a"><p  style="font-size: 26px">Форма для заполнения</big></p></p>
+  </h4>
+ </font>
+<h5>
+<hr width="80%" color="#d8bfd8" align="center" size="3">
+</h5>
+<body>
+  <form action="handler.php">
+
+<li><font size="4">ФИО пациента<br/>
+<input class="input" name="name" ENGINE="text" style="width:60%" /></p>
+<li>Возраст(лет, месяцев)<br />
+<input class="input" name="age_number" type="text" style="width:60%" /></p>
+<li>Пол<br />
+<select name="gender" size="число видимых элементов"><
+ <option value="female">женский</option>
+ <option value="male">мужской</option>
+ </select>
+
+<p><li>Микрокальцинаты<br />
+<input class="input" name="microcalcinate" ENGINE="text" style="width:60%" /></p>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+
+<li>Солидность<br />
+<input class="input" name="solidity" type="text" style="width:60%" /></p>
+
+<li>Эхогенность<br />
+<input class="input" name="echogenicity" ENGINE="text" style="width:60%" /></p>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+
+<li>Контуры<br />
+<input class="input" name="contours" ENGINE="text" style="width:60%" /></p>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+
+<li>Кровоток1<br />
+<input class="input" name="blood flow1" type="text" style="width:60%" /></p>
+<li>Кровоток2<br />
+<input class="input" name="blood flow2" type="text" style="width:60%" /></p>
+<li>Вертикализация<br />
+<input class="input" name="verticalization" type="text" style="width:60%" /></p>
+<li>Гистология<br />
+<input class="input" name="histology" type="text" style="width:60%" /></p>
+<p align="right"><label for="date">Дата: </label><br/>
+<input type="date" id="date" name="date"/></p><br>
+</li>
+<center>
+<button style="background:#6a1b9a ;color: #d8bfd8; width: 200px; height: 45px; border: 0; font-size: 20px; font-family: Montserrat;">Сохранить</button>
+</center>
+</ul>
+
+ </body>
+
+
+</html>
