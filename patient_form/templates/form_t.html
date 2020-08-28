@@ -1,19 +1,79 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Форма пациента</title>
-</head>
-<body>
-<h2>Форма пациента</h2>
+<meta charset="utf-8">
+<title>ZOBota.home</title>
 
+<style>
+	#sidebar{position:absolute;}
+	#sidebar{
+top: 100px;
+left: 120px;
+}
+
+   .layer1 {
+    background: #6a1b9a; /* Цвет фона */
+    box-shadow: 0 0 5px 3px black;
+    color: #DDA0DD; /* Цвет текста */
+    text-shadow: 2px 2px 1px black;
+    padding: 11px; /* Поля вокруг текста */
+    margin-bottom: -7px; /* Отступ снизу */
+   }
+   </style>
+ </head>
+
+<style>
+    button.knopka {
+        color: #D8BFD8;
+        background: #8B008B;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #8B008B;
+    }
+    button.knopka:hover {
+        background: #8B008B;
+    }
+</style>
+
+<style>
+    button.knopka {
+        color: #d8bfd8;
+        background: #6a1b9a;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #6a1b9a;
+        box-shadow: 0 0 5px 1px black;
+        text-shadow: 2px 2px 1px black;
+    }
+    button.knopka:hover {
+        background: #6a1b9a;
+    }
+</style>
+</head>
+
+
+
+<body bgcolor=#FFFAFA>
+<div class="layer1">
+<font size="7" face="Impact">ZOBota</font>
+</div>
+
+
+<br>
+<br>
 <form action="/db/" method="post">
     {% csrf_token %}
     <table>
     {{form.as_table}}
 
  </table>
+
+ <br>
+ <br>
 <input type="submit" value="Сохранить" />
 </form>
-</body>
+
+ </body>
+<br>
+
+
 </html>
